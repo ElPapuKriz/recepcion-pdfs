@@ -320,7 +320,7 @@ export default function HomePage() {
         </section>
       )}
 
-      <footer className="app-footer">Tus documentos se procesan en este navegador.</footer>
+      <footer className="app-footer">Programa creado por Christopher para poder agilizar los tiempos de recepcion 😜😜 </footer>
 
       {previewPage && previewSource && (
         <PdfViewerModal
