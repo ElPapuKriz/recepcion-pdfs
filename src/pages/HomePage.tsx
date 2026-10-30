@@ -131,7 +131,7 @@ export default function HomePage() {
         } finally {
           if (previewDocument) {
             try {
-              await previewDocument.destroy();
+              await previewDocument.loadingTask.destroy();
             } catch (cleanupError) {
               console.warn("No se pudo cerrar el lector PDF:", cleanupError);
             }

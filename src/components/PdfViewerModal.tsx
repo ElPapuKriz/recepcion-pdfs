@@ -58,7 +58,7 @@ export default function PdfViewerModal({
       } finally {
         if (pdfDocument) {
           try {
-            await pdfDocument.destroy();
+            await pdfDocument.loadingTask.destroy();
           } catch (cleanupError) {
             console.warn("No se pudo cerrar la vista previa:", cleanupError);
           }
